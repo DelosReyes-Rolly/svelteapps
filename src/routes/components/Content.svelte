@@ -94,14 +94,14 @@
 	input[type='radio']:checked + .page + label.nav span {
 		padding-left: 20px;
 	}
-	input[type='radio']:checked + .page + label.nav svg {
+	input[type='radio']:checked + .page + label.nav{
 		opacity: 1;
 	}
 	label.nav span {
 		padding-left: 0px;
 		position: relative;
 	}
-	label.nav svg {
+	label.nav {
 		left: 0;
 		top: -3px;
 		position: absolute;
