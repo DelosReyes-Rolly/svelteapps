@@ -5,6 +5,7 @@
 	import { CirclePlusSolid } from 'flowbite-svelte-icons';
 	import AddModal from './AddModal.svelte';
 	import Loader from './Loader.svelte';
+
 	let showModal = false;
 	const toggleModal = () => {
 		showModal = !showModal;
@@ -44,12 +45,10 @@
 				{#each todoList as todo (todo.id)}
 					<div class="mt-6"><Todo {todo} deleteOne={deleteTodo} {editTodo} /></div>
 				{:else}
-					<div style="margin:auto;">
-						-- No to do right now --
-					</div>
+					<div style="margin:auto;">-- No to do right now --</div>
 				{/each}
 				<button on:click={toggleModal}>
-					<Card size="sm" class="mt-6 ml-2 hover:bg-gray-200" style="height:60px">
+					<Card size="sm" class="ml-2 mt-6 hover:bg-gray-200" style="height:60px">
 						<CirclePlusSolid size="xl" style="margin: auto;" />
 					</Card>
 				</button>

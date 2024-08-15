@@ -25,8 +25,8 @@
 					style="text-align: center; position: relative; z-index: 2; color: white; padding-top: 80px;"
 				>
 					<div class="left-to-right">
-						<img src={weatherIconUrl} alt="Weather icon" style="margin-left: 120px;"/>
-						<br/>
+						<img src={weatherIconUrl} alt="Weather icon" style="margin-left: 120px;" />
+						<br />
 						<h2 class="mdc-typography--headline6" style="margin: 0; font-size: 100px;">
 							{+data.main.temp.toFixed(0)}°C
 						</h2>
@@ -43,7 +43,8 @@
 							Humidity - <span style="padding-top: 12px; padding-right: 40px;"
 								>{data.main.humidity}%</span
 							>
-						</div><br />
+						</div>
+						<br />
 						<div style="letter-spacing: 4px; text-transform: uppercase;">
 							Wind - <span style="padding-top: 12px;">{+data.wind.speed.toFixed(0)} k/m</span>
 						</div>
@@ -64,8 +65,10 @@
 						>
 							{data.name}
 						</h2>
-						<br/>
-						<hr style="border-radius: 10px; border: 4px solid white; width: 80px; margin-left:140px" />
+						<br />
+						<hr
+							style="border-radius: 10px; border: 4px solid white; width: 80px; margin-left:140px"
+						/>
 					</div>
 				</div>
 			</div>

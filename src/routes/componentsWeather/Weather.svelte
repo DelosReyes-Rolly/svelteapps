@@ -3,7 +3,6 @@
 	import { onMount } from 'svelte'; // for first rendering of page (onMount) - default city
 	import Card from './Card.svelte';
 	import { get } from 'svelte/store';
-
 	/**
 	 * @type {null}
 	 */

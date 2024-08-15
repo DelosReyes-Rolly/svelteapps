@@ -5,10 +5,10 @@
 
 <main>
 	<Header />
-	<br/>
+	<br />
 	<Card />
 </main>
 
 <style>
-
+	
 </style>

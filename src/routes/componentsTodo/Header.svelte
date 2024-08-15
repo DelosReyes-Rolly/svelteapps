@@ -1,6 +1,5 @@
 <script>
 	import { Navbar, NavBrand, NavUl, NavHamburger } from 'flowbite-svelte';
-
 	let today = new Date();
 	const options = { weekday: 'long', day: 'numeric', month: 'long' };
 	// @ts-ignore
@@ -18,7 +17,10 @@
 </script>
 
 <div class="relative px-8">
-	<Navbar class="fixed start-0 top-0 w-full pt-6 pb-6 z-20" style="background-color:rgb(40,44,60);  box-shadow: 0 4px 20px -2px black;">
+	<Navbar
+		class="fixed start-0 top-0 z-20 w-full pb-6 pt-6"
+		style="background-color:rgb(40,44,60);  box-shadow: 0 4px 20px -2px black;"
+	>
 		<NavBrand href="/">
 			<img src="Todolist-logo.png" class="me-3 h-6 sm:h-9" alt="Todo List" />
 			<span class="self-center whitespace-nowrap text-xl font-semibold text-white"

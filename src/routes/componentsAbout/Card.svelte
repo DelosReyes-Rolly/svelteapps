@@ -4,19 +4,61 @@
 
 <main>
 	<Card style="margin: 8em auto 0;" size="xl">
-		<h1><b>Svelte Weather App</b></h1><br>
-        <h2>Link:</h2> <a href="https://github.com/DelosReyes-Rolly/svelteweatherapp">GitHub Link</a>
-        <h3><b>Tech Stack:</b></h3> Svelte Kit, Svelte Material UI, OpenWeatherMap API<br>
-        <ul>
-            <li>Completed an online weather app using svelte that shows the current temperature, humidity and wind speed of 
-        certain places. It also includes the forecast for the next days.</li>
-        </ul>
-        <br><br><br><br>
-        <h1><b>Svelte To do List</b></h1><br>
-        <h2>Link:</h2> <a href="https://github.com/DelosReyes-Rolly/sveltetodo">GitHub Link</a>
-        <b>Tech Stack:</b> Svelte Kit, Tailwind CSS, Flow bite Svelte
-        <ul>
-            <li>Constructed an online to do list that includes CRUD operations (create, read, update, and delete)</li>
-        </ul>
+		<div>
+			<div class="title">Svelte Weather App</div>
+			<br />
+			<a href="https://github.com/DelosReyes-Rolly/svelteweatherapp" class="link">GitHub Link</a><br
+			/>
+			<span class="subtitle">Tech Stack: </span>
+			<span class="tech-description">&nbsp; Svelte Kit, Svelte Material UI, OpenWeatherMap API</span
+			><br />
+			<span class="subtitle">Description: </span>
+			<span class="tech-description">
+				&nbsp; Completed an online weather app using svelte that shows the current temperature,
+				humidity and wind speed of certain places. It also includes the forecast for the next days.
+			</span>
+
+			<br /><br /><br /><br />
+
+			<div class="title">Svelte To do List</div>
+			<br />
+			<a href="https://github.com/DelosReyes-Rolly/sveltetodo" class="link">GitHub Link</a><br />
+			<span class="subtitle">Tech Stack:</span>
+			<span class="tech-description">&nbsp; Svelte Kit, Tailwind CSS, Flow bite Svelte</span><br />
+			<span class="subtitle">Description: </span>
+			<span class="tech-description">
+				&nbsp; Constructed an online to do list that includes CRUD operations (create, read, update,
+				and delete).
+			</span>
+		</div>
 	</Card>
 </main>
+
+<style>
+	.title {
+		font-size: 28px;
+		color: black;
+		font-weight: bold;
+	}
+
+	.subtitle {
+		font-size: 20px;
+		color: black;
+		font-weight: bold;
+		display: inline-block;
+	}
+
+	.link {
+		font-size: 20px;
+		color: blue;
+	}
+
+	.link:hover {
+		text-decoration: underline;
+	}
+
+	.tech-description {
+		font-size: 20px;
+		color: black;
+	}
+</style>

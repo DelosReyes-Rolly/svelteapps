@@ -6,6 +6,7 @@
 </script>
 
 <main>
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
 	<div class="layout">
 		<input name="nav" type="radio" class="nav home-radio" id="home" checked />
 		<div class="page home-page todo-bg bg">
@@ -26,7 +27,7 @@
 		</label>
 
 		<input name="nav" type="radio" class="contact-radio" id="contact" />
-		<div class="page contact-page weather-bg bg">
+		<div class="page contact-page about-bg bg">
 			<MainAbout />
 		</div>
 		<label class="nav" for="contact">
@@ -37,16 +38,13 @@
 </main>
 
 <style>
-	* {
-		font-family: 'Work Sans', sans-serif;
-	}
-
 	:global(body) {
 		height: 100%;
 		color: #1a1b1c;
+		font-family: 'Poppins';
 	}
 
-	label{
+	label {
 		cursor: pointer;
 		user-select: none;
 		text-decoration: none;
@@ -56,7 +54,8 @@
 		border-bottom: 5px solid rgba(142, 68, 173, 0.2);
 		padding: 3px 2px;
 	}
-	label:hover{
+
+	label:hover {
 		border-bottom-color: #9b59b6;
 	}
 
@@ -78,7 +77,7 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
-		border-bottom: 2px solid #8e44ad;
+		border-bottom: 2px solid #4d68a2;
 		background: #ecf0f1;
 		user-select: none;
 		transition:
@@ -86,28 +85,25 @@
 			padding-left 0.2s;
 		padding-left: 0;
 	}
+
 	input[type='radio']:checked + .page + label.nav {
-		background: #9b59b6;
+		background: #4d68a2;
 		color: #ffffff;
 		padding-left: 20px;
+		box-shadow: 0 4px 20px -2px black;
 	}
+
 	input[type='radio']:checked + .page + label.nav span {
 		padding-left: 20px;
 	}
-	input[type='radio']:checked + .page + label.nav{
+
+	input[type='radio']:checked + .page {
 		opacity: 1;
 	}
+
 	label.nav span {
 		padding-left: 0px;
 		position: relative;
-	}
-	label.nav {
-		left: 0;
-		top: -3px;
-		position: absolute;
-		width: 15px;
-		opacity: 0;
-		transition: opacity 0.2s;
 	}
 
 	.page {
@@ -125,10 +121,6 @@
 	input[type='radio']:checked + .page {
 		transform: translateX(0%);
 	}
-	input[type='radio']:checked {
-		opacity: 1;
-		transform: translateY(0px);
-	}
 
 	.todo-bg {
 		background-image: url('todos-bg.jpg');
@@ -136,6 +128,10 @@
 
 	.weather-bg {
 		background-image: url('bg.jpeg');
+	}
+
+	.about-bg {
+		background-image: url('about-bg.jpg');
 	}
 
 	.bg {

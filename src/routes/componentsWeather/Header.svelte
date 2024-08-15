@@ -16,16 +16,14 @@
 	// Call updateTime every second to update the time
 	setInterval(updateTime, 1000);
 </script>
-
-<TopAppBar variant="standard" style="padding-top: 10px; padding-bottom: 10px; background-color:#050A30; box-shadow: 0 4px 20px -2px black;">
+<TopAppBar
+	variant="standard"
+	style="padding-top: 10px; padding-bottom: 10px; background-color:#050A30; box-shadow: 0 4px 20px -2px black;"
+>
 	<Row>
 		<Section style="padding-left:40px;">
-				<Icon
-					tag="img"
-					style="height: auto; width: 48px;"
-					src="weather-icon.png"
-				/>
-				<Title>Today's Weather</Title>
+			<Icon tag="img" style="height: auto; width: 48px;" src="weather-icon.png" />
+			<Title>Today's Weather</Title>
 		</Section>
 		<div
 			style="text-align: center; padding-right:40px; letter-spacing: 4px; font-family:Arial, Helvetica, sans-serif; font-size: 20px"

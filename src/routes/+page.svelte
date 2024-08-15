@@ -1,11 +1,11 @@
 <script>
-	import Main from "./main/Main.svelte";
+	import Main from './main/Main.svelte';
 </script>
 
 <svelte:head>
 	<title>Svelte</title>
 	<meta name="description" content="Svelte Todo List App" />
-    <!-- Fonts -->
+	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link
 		rel="stylesheet"
@@ -13,7 +13,7 @@
 	/>
 
 	<!-- Material Typography -->
-	<link 
+	<link
 		rel="stylesheet"
 		href="https://unpkg.com/@material/typography@14.0.0/dist/mdc.typography.css"
 	/>
@@ -21,5 +21,4 @@
 	<!-- SMUI -->
 	<link rel="stylesheet" href="https://unpkg.com/svelte-material-ui/bare.css" />
 </svelte:head>
-
-<Main/>
+<Main />

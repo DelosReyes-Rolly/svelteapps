@@ -1,8 +1,9 @@
 <script lang="ts">
 	import { Accordion, AccordionItem, Card } from 'flowbite-svelte';
-	let defaultModal = false;
 	import { EditOutline, TrashBinOutline } from 'flowbite-svelte-icons';
 	import EditModal from './EditModal.svelte';
+
+	let defaultModal = false;
 	const toggleModal = () => {
 		defaultModal = !defaultModal;
 	};
